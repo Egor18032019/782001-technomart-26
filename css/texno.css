@@ -1,0 +1,367 @@
+/* Подключить шрифты */
+
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+/* html {
+  box-sizing: border-box;
+}*/
+/* вернуться к этому позже */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+/* убираем подчеркивание */
+a {
+  text-decoration: none;
+}
+
+/* прячем */
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/* шапка сайта */
+header {
+  max-width: 1200px;
+  height: 320px;
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 0 calc(50% - 600px);
+  background-color: #f4f7f9;
+  flex-direction: column;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-top {
+  width: 100%;
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #293449;
+  font-family: "Cuprum";
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 1.06;
+  text-align: left;
+  color: white;
+}
+
+.header-top a,
+.header-bottom a {
+  font-family: "Cuprum";
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 1.06;
+  text-align: left;
+  color: white;
+}
+
+.header-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 158px;
+}
+
+.header-bottom {
+  width: 940px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: inset 0px -5px 0 0 #293449;
+  background-color: #32425c;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* основное содержимое */
+main {
+  width: 940px;
+  padding: 0 calc(50% - 470px);
+}
+
+section.main-catalog {
+  width: 100%;
+  height: 521px;
+  margin: auto;
+  padding: 0;
+}
+
+.main-catalog ul {
+  height: 123px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  padding-top: 59px;
+}
+
+.catalog-list>li {
+  display: flex;
+  width: 300px;
+  height: 123px;
+  margin-bottom: 20px;
+  background-color: yellowgreen;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.catalog-list li:nth-child(2) {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.catalog-list li:nth-child(4),
+.catalog-list li:nth-child(5) {
+  margin-left: 640px;
+}
+
+.catalog-list_items {
+  display: flex;
+  width: 620px;
+  height: 266px;
+  position: relative;
+  background-color: grey;
+  justify-content: space-between;
+  margin-left: 0;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.catalog-list_items span{
+  position: absolute;
+}
+/* Популярные товары */
+section.popular {
+  width: 940px;
+  height: 962px;
+  box-sizing: border-box;
+}
+
+.popular-text {
+  width: 100%;
+  height: 89px;
+  display: flex;
+  align-items: center;
+  background-color: #f9f5f0;
+  margin: 0;
+  margin-bottom: 21px;
+  font-family: "Cuprum";
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #32425c;
+}
+
+.popular-text span {
+  width: 253px;
+  height: 38px;
+  margin-left: auto;
+  font-family: "Cuprum";
+  font-size: 14px;
+  font-weight: normal;
+  background-color: red;
+
+  line-height: 1.29;
+  letter-spacing: normal;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.popular-list {
+  width: 100%;
+  height: 318px;
+  display: flex;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.popular-list li {
+  width: 220px;
+  height: 318px;
+  border: solid 1px #eaeaea;
+  background-color: blueviolet;
+
+}
+
+.popular-list li:nth-child(2) {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.popular-list li:nth-child(3) {
+  margin-right: 20px;
+}
+
+.popular-logotips {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-logotips li {
+  width: 220px;
+  height: 145px;
+  border: solid 1px #eaeaea;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.popular-logotips img {
+  margin: auto;
+}
+
+.popular-logotips a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Сервисы какие есть */
+section.servis {
+  width: 100%;
+  height: 522px;
+  background-color: #f4f7f9;
+  padding: 0;
+  margin: 0;
+}
+
+.servis-navigation {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.servis ul {
+  list-style: none;
+}
+
+.servis-navigation_controls {
+  width: 240px;
+
+}
+
+.servis-navigation_controls li {
+  width: 240px;
+  min-height: 61px;
+  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+}
+
+.servis-navigation_controls label {
+  width: 240px;
+  height: 61px;
+  display: block;
+  font-family: "Cuprum";
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: #32425c;
+}
+
+.servis-navigation input {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.slides-item {
+  display: none;
+
+}
+
+#delevery:checked~.servis-navigation_slides .item-delevery {
+  display: block;
+}
+
+#credit:checked~.servis-navigation_slides .item-credit {
+  display: block;
+}
+
+#garant:checked~.servis-navigation_slides .item-garant {
+  display: block;
+}
+
+#delevery:checked~.servis-navigation_controls .delevery-label {
+  background-color: #32425c;
+  color: #ffffff;
+}
+
+#garant:checked~.servis-navigation_controls .garant-label {
+  background-color: #32425c;
+  color: #ffffff;
+}
+
+#credit:checked~.servis-navigation_controls .credit-label {
+  background-color: #32425c;
+  color: #ffffff;
+}
+
+.sliders {
+  display: none;
+}
+/* .slider-show{
+  display: block;
+  border: 1px solid red;
+} */
+
+.slider-show {
+  display: block;
+  width: 620px;
+  height: 266px;
+  background-color: aqua;
+}
+.catalog-list_items .catalog-list_sliders {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.catalog-list_items .left {
+  z-index: 2;
+  top:50%;
+}
+.catalog-list_items .right {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 570px;
+  background-color: green;
+}
+
